@@ -12,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.management.relation.Role;
 import java.util.*;
 
-
 @Getter
 @Setter
 @ToString
@@ -30,6 +29,9 @@ public class User implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @OneToMany(mappedBy = "organizer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Event> organizedEvents;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -61,3 +63,4 @@ public class User implements UserDetails {
         return true;
     }
 }
+
