@@ -1,5 +1,5 @@
 
-package Entities;
+package w7d5.mauriziocrispino.Entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

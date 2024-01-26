@@ -1,15 +1,9 @@
-package Service;
+package w7d5.mauriziocrispino.Service;
 
-import Entities.Event;
-import Entities.Role;
-import Entities.User;
-import Repositories.EventRepository;
-import Repositories.UserRepository;
+import w7d5.mauriziocrispino.Repositories.EventRepository;
+import w7d5.mauriziocrispino.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
-import java.util.UUID;
 
 @Service
 public class EventService {

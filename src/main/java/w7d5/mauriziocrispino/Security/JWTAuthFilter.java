@@ -1,8 +1,8 @@
-package Security;
+package w7d5.mauriziocrispino.Security;
 
-import Entities.User;
-import Exceptions.UnauthorizedException;
-import Service.UserService;
+import w7d5.mauriziocrispino.Entities.User;
+import w7d5.mauriziocrispino.Exceptions.UnauthorizedException;
+import w7d5.mauriziocrispino.Service.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

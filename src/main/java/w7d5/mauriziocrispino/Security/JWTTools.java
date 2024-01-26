@@ -1,11 +1,12 @@
-package Security;
+package w7d5.mauriziocrispino.Security;
 
-import Entities.User;
-import Exceptions.UnauthorizedException;
+import w7d5.mauriziocrispino.Entities.User;
+import w7d5.mauriziocrispino.Exceptions.UnauthorizedException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
 @Component

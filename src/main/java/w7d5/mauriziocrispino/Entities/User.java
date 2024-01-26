@@ -1,4 +1,4 @@
-package Entities;
+package w7d5.mauriziocrispino.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
