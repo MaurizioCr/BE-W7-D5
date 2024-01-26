@@ -1,5 +1,6 @@
 package w7d5.mauriziocrispino.Service;
 
+import org.springframework.stereotype.Service;
 import w7d5.mauriziocrispino.DTO.NewUserDTO;
 import w7d5.mauriziocrispino.DTO.UserLoginDTO;
 import w7d5.mauriziocrispino.Entities.Role;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+@Service
 public class AuthService {
     @Autowired
     private UserDetailsService usersDetailService;

@@ -13,6 +13,8 @@ import w7d5.mauriziocrispino.Entities.User;
 import w7d5.mauriziocrispino.Exceptions.BadRequestException;
 import w7d5.mauriziocrispino.Service.AuthService;
 
+@RestController
+@RequestMapping("/auth")
 public class AuthController {
     @Autowired
     private AuthService authService;
