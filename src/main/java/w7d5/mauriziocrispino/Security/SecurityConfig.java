@@ -1,4 +1,4 @@
-package Security;
+package w7d5.mauriziocrispino.Security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

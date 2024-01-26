@@ -1,6 +1,6 @@
-package Repositories;
+package w7d5.mauriziocrispino.Repositories;
 
-import Entities.Event;
+import w7d5.mauriziocrispino.Entities.Event;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

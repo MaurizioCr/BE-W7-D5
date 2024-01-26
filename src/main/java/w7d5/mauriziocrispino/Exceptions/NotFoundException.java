@@ -1,4 +1,4 @@
-package Exceptions;
+package w7d5.mauriziocrispino.Exceptions;
 
 import java.util.UUID;
 

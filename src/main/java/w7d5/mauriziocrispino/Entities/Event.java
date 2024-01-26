@@ -1,5 +1,5 @@
 
-package Entities;
+package w7d5.mauriziocrispino.Entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -23,6 +23,18 @@ public class Event {
     private Date date;
     private String location;
     private int availableSeats;
+
+    public Event(String title, String description, Date date, String location, int availableSeats, User organizer) {
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.location = location;
+        this.availableSeats = availableSeats;
+        this.organizer = organizer;
+    }
+
+    public Event() {
+    }
 
     @ManyToOne
     @JoinColumn(name = "organizer_id", nullable = false)

@@ -1,4 +1,4 @@
-package Entities;
+package w7d5.mauriziocrispino.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -29,6 +29,18 @@ public class User implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    public User(String name, String surname, String email, String password, Role role, List<Event> organizedEvents) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+        this.organizedEvents = organizedEvents;
+    }
+
+    public User() {
+    }
 
     @OneToMany(mappedBy = "organizer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Event> organizedEvents;
@@ -61,6 +73,9 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public void setRole(w7d5.mauriziocrispino.Entities.Role role) {
     }
 }
 
